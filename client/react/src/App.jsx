@@ -1,25 +1,40 @@
-// App.js
 import React from 'react';
 import Home from './components/Home';
 import LookupPage from './components/LookupPage';
 import SettingsPage from './components/SettingsPage';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-    <nav>
-      <Link to="/">Home</Link> | 
-      <Link to="/lookup">Lookup Page</Link> | 
-      <Link to="/settings">Settings</Link>
-    </nav>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/lookup" element={<LookupPage />} />
-      <Route path="/settings" element={<SettingsPage />} />
-    </Routes>
-  </BrowserRouter>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">MyApp</Link>
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/lookup">Lookup Page</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/settings">Settings</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div className="container mt-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lookup" element={<LookupPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

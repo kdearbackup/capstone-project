@@ -1,7 +1,7 @@
 const SettingsPage = () => {
     return (
         <div>
-            <h2>Settings</h2>;
+            <h2>Settings</h2>
             <p>User information goes here (coming soon)</p>
         </div>
         )
