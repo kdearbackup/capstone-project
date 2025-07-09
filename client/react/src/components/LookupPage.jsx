@@ -3,6 +3,8 @@ const LookupPage = () => {
         <div>
             <h2>Lookup Page</h2>;
             <p>Look up people's stuff (coming soon)</p>
+
+            <INPUT>HERE</INPUT>
         </div>
         )
 }
