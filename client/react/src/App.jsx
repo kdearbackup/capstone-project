@@ -1,12 +1,16 @@
-import React from 'react';
+// App.js
+import React, { useState } from 'react';
 import Home from './components/Home';
 import LookupPage from './components/LookupPage';
 import SettingsPage from './components/SettingsPage';
+import Login from './components/Login';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,11 +32,15 @@ function App() {
         </div>
       </nav>
       <div className="container mt-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/lookup" element={<LookupPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-        </Routes>
+        {isAuthenticated ? (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/lookup" element={<LookupPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+          </Routes>
+        ) : (
+          <Login onLogin={setIsAuthenticated} />
+        )}
       </div>
     </BrowserRouter>
   );
