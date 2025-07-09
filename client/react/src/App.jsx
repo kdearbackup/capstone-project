@@ -10,6 +10,13 @@ import './App.css';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState('');
+
+  const handleLogin = (user) => {
+    setIsAuthenticated(true);
+    console.log(user)
+    setUsername(user);
+  };
 
   return (
     <BrowserRouter>
@@ -36,10 +43,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/lookup" element={<LookupPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/settings" element={<SettingsPage username={username}/>} />
           </Routes>
         ) : (
-          <Login onLogin={setIsAuthenticated} />
+          <Login onLogin={handleLogin} />
         )}
       </div>
     </BrowserRouter>

@@ -9,7 +9,7 @@ function Login({ onLogin }) {
     e.preventDefault();
     // Simple authentication logic (replace with real authentication)
     if (username === 'user' && password === 'password') {
-      onLogin(true);
+      onLogin(username);
     } else {
       alert('Invalid credentials');
     }
