@@ -25,3 +25,108 @@ body, html, #root {
   color: red !important; /* Use !important to override Bootstrap styles */
 }
 
+.home-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home-greeting {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.home-footer {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+}
+
+.lookup-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lookup-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lookup-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.settings-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.settings-info {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.settings-username {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.settings-access-level {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.settings-description {
+  font-size: 14px;
+  color: grey;
+  font-style: italic;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-container {
+  max-width: 300px;
+  margin: 0 auto;
+}

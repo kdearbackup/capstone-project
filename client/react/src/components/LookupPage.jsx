@@ -10,14 +10,14 @@ const LookupPage = () => {
         //   .then(data => console.log(data));
       };
 
-    return (
-        <div>
-            <h2>Lookup Page</h2>
-            <p>Look up people's stuff (coming soon)</p>
-
-            <QueryForm onQuery={handleQuery} />
+      return (
+        <div className="lookup-container">
+          <h2 className="lookup-title">Lookup Page</h2>
+          <p className="lookup-description">Look up people's stuff (coming soon)</p>
+    
+          <QueryForm onQuery={handleQuery} />
         </div>
-        )
+      );
 }
 
 export default LookupPage

@@ -14,17 +14,14 @@ function App() {
   const [permissionLevel, setPermissionLevel] = useState('')
 
   //Split stuff so it forms an array
-  console.log(import.meta.env.VITE_FULL_ACCESS_USERS)
   const fullAccessUsers = import.meta.env.VITE_FULL_ACCESS_USERS.split(',');
   const partialAccessUsers = import.meta.env.VITE_PARTIAL_ACCESS_USERS.split(',');
   const limitedAccessUsers = import.meta.env.VITE_LIMITED_ACCESS_USERS.split(',');
 
   const handleLogin = (user) => {
     setIsAuthenticated(true);
-    console.log(user);
     setUsername(user);
 
-    console.log(fullAccessUsers.includes(user))
     // Check if user is in list for different access levels
     if (fullAccessUsers.includes(user)) {
       setPermissionLevel('full');
@@ -40,7 +37,9 @@ function App() {
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">Directory App</Link>
+        <Link className="navbar-brand" to="/">
+            <img src="/travImage.png" alt="Logo" style={{ height: '40px' }} />
+          </Link>          
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
