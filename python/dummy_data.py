@@ -30,7 +30,7 @@ def calculate_salary(job_role,work_location):
     return base_salary * multiplier
 
 
-def generate_dummy_data(num_records=500):
+def generate_dummy_data(num_records=1000):
     data_list = []
     for _ in range(num_records):
         job_role = random.choice(data['job_type'])

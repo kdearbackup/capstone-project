@@ -1,0 +1,1001 @@
+job_role,work_location,salary
+President,Hartford,500000.0
+Designer,Hartford,60000.0
+Designer,Boston,66000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+Designer,Boston,66000.0
+Designer,Boston,66000.0
+Designer,New York,90000.0
+Analyst,New York,105000.0
+Analyst,New York,105000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+Analyst,Hartford,70000.0
+Designer,Boston,66000.0
+Analyst,DC,84000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+President,DC,600000.0
+Engineer,DC,96000.0
+President,Hartford,500000.0
+President,DC,600000.0
+Analyst,Hartford,70000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Designer,Hartford,60000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Engineer,DC,96000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+Designer,New York,90000.0
+President,Hartford,500000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Designer,New York,90000.0
+Engineer,Boston,88000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Analyst,New York,105000.0
+Designer,Boston,66000.0
+Engineer,Hartford,80000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+President,Boston,550000.0
+President,DC,600000.0
+Designer,Boston,66000.0
+President,DC,600000.0
+Designer,Hartford,60000.0
+Designer,Boston,66000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Analyst,Boston,77000.0
+Analyst,New York,105000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+President,Boston,550000.0
+President,DC,600000.0
+Designer,Hartford,60000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+President,Boston,550000.0
+Designer,Hartford,60000.0
+Analyst,Boston,77000.0
+Designer,DC,72000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Engineer,Boston,88000.0
+President,New York,750000.0
+Engineer,Boston,88000.0
+President,New York,750000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+Analyst,Boston,77000.0
+Designer,New York,90000.0
+Designer,DC,72000.0
+President,New York,750000.0
+President,DC,600000.0
+Designer,DC,72000.0
+Designer,Hartford,60000.0
+Engineer,Boston,88000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Designer,New York,90000.0
+Analyst,Boston,77000.0
+President,Boston,550000.0
+Analyst,Boston,77000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+Analyst,Boston,77000.0
+Designer,New York,90000.0
+Designer,Hartford,60000.0
+Engineer,New York,120000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Designer,Hartford,60000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Engineer,DC,96000.0
+Designer,Hartford,60000.0
+Designer,DC,72000.0
+Engineer,Hartford,80000.0
+Analyst,Boston,77000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+Engineer,Hartford,80000.0
+Analyst,Boston,77000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+Designer,New York,90000.0
+President,Hartford,500000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+Designer,Boston,66000.0
+Engineer,Boston,88000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Analyst,Hartford,70000.0
+Engineer,DC,96000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+Designer,New York,90000.0
+Designer,Hartford,60000.0
+Analyst,DC,84000.0
+President,Hartford,500000.0
+Analyst,Hartford,70000.0
+Engineer,Boston,88000.0
+Designer,New York,90000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Analyst,New York,105000.0
+President,DC,600000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Analyst,New York,105000.0
+Analyst,DC,84000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+President,Boston,550000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Engineer,DC,96000.0
+Designer,New York,90000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Designer,New York,90000.0
+Analyst,Hartford,70000.0
+Analyst,New York,105000.0
+Analyst,DC,84000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Designer,Hartford,60000.0
+Designer,DC,72000.0
+Designer,DC,72000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Analyst,Boston,77000.0
+Analyst,Hartford,70000.0
+Designer,New York,90000.0
+Designer,New York,90000.0
+Designer,New York,90000.0
+President,DC,600000.0
+President,New York,750000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+Engineer,New York,120000.0
+Designer,DC,72000.0
+Engineer,Boston,88000.0
+President,Hartford,500000.0
+Designer,New York,90000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+President,Boston,550000.0
+Designer,Hartford,60000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Designer,Boston,66000.0
+President,Boston,550000.0
+Analyst,DC,84000.0
+Designer,Hartford,60000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+President,New York,750000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Analyst,New York,105000.0
+Engineer,Hartford,80000.0
+Designer,DC,72000.0
+Analyst,Boston,77000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+President,New York,750000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Analyst,Hartford,70000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+Designer,New York,90000.0
+President,Boston,550000.0
+President,DC,600000.0
+President,New York,750000.0
+Analyst,DC,84000.0
+President,Boston,550000.0
+President,New York,750000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Analyst,New York,105000.0
+President,DC,600000.0
+President,DC,600000.0
+Designer,DC,72000.0
+Engineer,Boston,88000.0
+Designer,New York,90000.0
+Engineer,Boston,88000.0
+Designer,Boston,66000.0
+Designer,New York,90000.0
+Engineer,DC,96000.0
+President,DC,600000.0
+Analyst,Boston,77000.0
+Analyst,DC,84000.0
+Designer,New York,90000.0
+Engineer,New York,120000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+President,Boston,550000.0
+Engineer,New York,120000.0
+President,New York,750000.0
+Designer,Boston,66000.0
+Designer,New York,90000.0
+President,Boston,550000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+Analyst,New York,105000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+Designer,Boston,66000.0
+President,New York,750000.0
+Designer,Boston,66000.0
+President,Boston,550000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+President,Boston,550000.0
+Designer,DC,72000.0
+Designer,New York,90000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Engineer,Hartford,80000.0
+Analyst,Boston,77000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+Designer,Hartford,60000.0
+Analyst,Boston,77000.0
+Engineer,DC,96000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Designer,Hartford,60000.0
+Engineer,Boston,88000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+Designer,New York,90000.0
+President,DC,600000.0
+Analyst,DC,84000.0
+President,DC,600000.0
+President,New York,750000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+President,New York,750000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+President,Boston,550000.0
+Designer,DC,72000.0
+Designer,New York,90000.0
+Engineer,DC,96000.0
+Engineer,DC,96000.0
+Analyst,Boston,77000.0
+President,New York,750000.0
+President,New York,750000.0
+President,Hartford,500000.0
+President,DC,600000.0
+President,DC,600000.0
+President,DC,600000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Designer,Boston,66000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+President,New York,750000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Analyst,DC,84000.0
+President,Boston,550000.0
+President,Boston,550000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+President,Hartford,500000.0
+Engineer,New York,120000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+Engineer,Boston,88000.0
+Analyst,Hartford,70000.0
+Designer,New York,90000.0
+Engineer,DC,96000.0
+Engineer,DC,96000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+Engineer,DC,96000.0
+Designer,New York,90000.0
+Analyst,Boston,77000.0
+Designer,Boston,66000.0
+Designer,Hartford,60000.0
+Designer,Boston,66000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Designer,Hartford,60000.0
+Analyst,Hartford,70000.0
+President,Hartford,500000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Analyst,New York,105000.0
+Analyst,Boston,77000.0
+Engineer,New York,120000.0
+Engineer,DC,96000.0
+Designer,DC,72000.0
+Analyst,New York,105000.0
+President,DC,600000.0
+Analyst,Boston,77000.0
+Designer,DC,72000.0
+President,Hartford,500000.0
+Designer,Boston,66000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+President,DC,600000.0
+Designer,New York,90000.0
+Analyst,Boston,77000.0
+Engineer,New York,120000.0
+President,Hartford,500000.0
+Designer,Boston,66000.0
+President,Boston,550000.0
+Engineer,New York,120000.0
+Designer,DC,72000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Analyst,Boston,77000.0
+Engineer,DC,96000.0
+Designer,DC,72000.0
+Analyst,New York,105000.0
+President,DC,600000.0
+President,DC,600000.0
+President,Hartford,500000.0
+Engineer,Hartford,80000.0
+Analyst,New York,105000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Designer,Boston,66000.0
+President,DC,600000.0
+Engineer,DC,96000.0
+Analyst,Hartford,70000.0
+Designer,Boston,66000.0
+Engineer,DC,96000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+President,Hartford,500000.0
+Analyst,Hartford,70000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+Engineer,DC,96000.0
+Engineer,New York,120000.0
+Analyst,Boston,77000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Analyst,Hartford,70000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Engineer,Boston,88000.0
+President,Hartford,500000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+Engineer,Boston,88000.0
+President,DC,600000.0
+Engineer,DC,96000.0
+President,DC,600000.0
+President,DC,600000.0
+Designer,Boston,66000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+Engineer,Hartford,80000.0
+Designer,Hartford,60000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+President,Boston,550000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Engineer,New York,120000.0
+Engineer,Hartford,80000.0
+Analyst,Hartford,70000.0
+Engineer,Boston,88000.0
+President,DC,600000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Analyst,Hartford,70000.0
+President,Hartford,500000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+President,New York,750000.0
+Engineer,New York,120000.0
+Analyst,DC,84000.0
+Engineer,Boston,88000.0
+President,Hartford,500000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+President,Hartford,500000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+President,New York,750000.0
+President,DC,600000.0
+President,Boston,550000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+President,DC,600000.0
+Engineer,DC,96000.0
+Designer,Boston,66000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Designer,Hartford,60000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Designer,New York,90000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+Designer,New York,90000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+President,New York,750000.0
+Analyst,Boston,77000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Engineer,New York,120000.0
+Analyst,Boston,77000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Designer,Boston,66000.0
+Designer,Hartford,60000.0
+President,New York,750000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Engineer,New York,120000.0
+Analyst,Boston,77000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Designer,Boston,66000.0
+Analyst,New York,105000.0
+President,Boston,550000.0
+President,DC,600000.0
+Designer,DC,72000.0
+President,New York,750000.0
+Designer,New York,90000.0
+President,Hartford,500000.0
+Engineer,Boston,88000.0
+Designer,New York,90000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+President,DC,600000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Designer,Hartford,60000.0
+Designer,Hartford,60000.0
+Designer,Boston,66000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Designer,DC,72000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+Designer,Boston,66000.0
+Engineer,Hartford,80000.0
+Engineer,DC,96000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Analyst,Boston,77000.0
+President,Hartford,500000.0
+Designer,Boston,66000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+President,New York,750000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Engineer,Boston,88000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+Engineer,New York,120000.0
+Engineer,Hartford,80000.0
+Engineer,New York,120000.0
+Designer,DC,72000.0
+Designer,New York,90000.0
+Analyst,DC,84000.0
+President,New York,750000.0
+Analyst,Boston,77000.0
+Engineer,Boston,88000.0
+Analyst,Hartford,70000.0
+President,New York,750000.0
+Engineer,DC,96000.0
+Designer,Hartford,60000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+President,Hartford,500000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Engineer,Hartford,80000.0
+Designer,Hartford,60000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+President,DC,600000.0
+President,Hartford,500000.0
+President,DC,600000.0
+Designer,New York,90000.0
+Analyst,Boston,77000.0
+Engineer,Boston,88000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Engineer,New York,120000.0
+President,New York,750000.0
+Analyst,New York,105000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Designer,DC,72000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Designer,New York,90000.0
+Designer,New York,90000.0
+Engineer,Hartford,80000.0
+President,Hartford,500000.0
+President,New York,750000.0
+Designer,Boston,66000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Designer,Hartford,60000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+President,DC,600000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+Analyst,Boston,77000.0
+President,Hartford,500000.0
+Analyst,Hartford,70000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+Analyst,New York,105000.0
+President,New York,750000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+President,New York,750000.0
+Analyst,DC,84000.0
+Engineer,Boston,88000.0
+Analyst,Boston,77000.0
+Designer,DC,72000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+President,New York,750000.0
+Designer,New York,90000.0
+Analyst,New York,105000.0
+Designer,Hartford,60000.0
+President,Boston,550000.0
+Analyst,New York,105000.0
+Analyst,Boston,77000.0
+Designer,Hartford,60000.0
+Designer,DC,72000.0
+Analyst,Boston,77000.0
+Engineer,DC,96000.0
+President,DC,600000.0
+Designer,DC,72000.0
+Analyst,Hartford,70000.0
+Designer,DC,72000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Engineer,Boston,88000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Designer,New York,90000.0
+Analyst,Hartford,70000.0
+Analyst,New York,105000.0
+Analyst,New York,105000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+Engineer,Hartford,80000.0
+Designer,Boston,66000.0
+Designer,New York,90000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Analyst,Hartford,70000.0
+Engineer,DC,96000.0
+President,DC,600000.0
+Engineer,Hartford,80000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Analyst,Boston,77000.0
+President,Boston,550000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+President,Boston,550000.0
+Designer,New York,90000.0
+President,Hartford,500000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Engineer,New York,120000.0
+Designer,New York,90000.0
+Analyst,New York,105000.0
+Engineer,Hartford,80000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+President,Boston,550000.0
+President,Hartford,500000.0
+Designer,Hartford,60000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+Analyst,DC,84000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Designer,Boston,66000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+President,Hartford,500000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Analyst,New York,105000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+Engineer,Hartford,80000.0
+Analyst,New York,105000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+Designer,Hartford,60000.0
+Analyst,Boston,77000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+Engineer,New York,120000.0
+Analyst,New York,105000.0
+Designer,DC,72000.0
+Engineer,Boston,88000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+President,Boston,550000.0
+Engineer,Hartford,80000.0
+President,New York,750000.0
+Engineer,DC,96000.0
+Engineer,New York,120000.0
+Analyst,New York,105000.0
+Engineer,DC,96000.0
+Designer,DC,72000.0
+President,DC,600000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+President,Hartford,500000.0
+Analyst,DC,84000.0
+Designer,Boston,66000.0
+Engineer,DC,96000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+Analyst,New York,105000.0
+Engineer,New York,120000.0
+Analyst,Boston,77000.0
+Analyst,DC,84000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+Analyst,Hartford,70000.0
+Analyst,DC,84000.0
+Engineer,DC,96000.0
+Designer,DC,72000.0
+Analyst,Boston,77000.0
+Analyst,New York,105000.0
+Designer,Boston,66000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Engineer,Hartford,80000.0
+President,Boston,550000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+President,Hartford,500000.0
+President,Hartford,500000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+Engineer,DC,96000.0
+Analyst,New York,105000.0
+Designer,New York,90000.0
+Designer,DC,72000.0
+President,DC,600000.0
+President,Boston,550000.0
+Analyst,Boston,77000.0
+President,DC,600000.0
+Analyst,Boston,77000.0
+Analyst,Hartford,70000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+Designer,Hartford,60000.0
+Analyst,DC,84000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+President,New York,750000.0
+Designer,Hartford,60000.0
+Analyst,DC,84000.0
+Engineer,Hartford,80000.0
+Designer,New York,90000.0
+President,New York,750000.0
+President,Boston,550000.0
+Designer,New York,90000.0
+Engineer,Hartford,80000.0
+Analyst,Hartford,70000.0
+Designer,Hartford,60000.0
+Engineer,DC,96000.0
+Engineer,DC,96000.0
+Analyst,Hartford,70000.0
+Analyst,Hartford,70000.0
+President,DC,600000.0
+Designer,Hartford,60000.0
+Engineer,DC,96000.0
+Engineer,Boston,88000.0
+Designer,Boston,66000.0
+President,DC,600000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+Designer,New York,90000.0
+Engineer,New York,120000.0
+Engineer,Boston,88000.0
+Designer,DC,72000.0
+Engineer,Hartford,80000.0
+Designer,Boston,66000.0
+President,Hartford,500000.0
+Designer,DC,72000.0
+Analyst,DC,84000.0
+Designer,DC,72000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+Engineer,New York,120000.0
+President,DC,600000.0
+Engineer,Hartford,80000.0
+Engineer,Boston,88000.0
+Designer,Hartford,60000.0
+Designer,New York,90000.0
+Analyst,DC,84000.0
+Analyst,Boston,77000.0
+Analyst,New York,105000.0
+Analyst,Hartford,70000.0
+Engineer,Hartford,80000.0
+Analyst,New York,105000.0
+Designer,DC,72000.0
+President,Hartford,500000.0
+Analyst,Boston,77000.0
+Designer,DC,72000.0
+Designer,Hartford,60000.0
+Engineer,DC,96000.0
+President,Boston,550000.0
+Designer,New York,90000.0
+Designer,DC,72000.0
+Analyst,Hartford,70000.0
+Analyst,Hartford,70000.0
+Engineer,New York,120000.0
+Analyst,Hartford,70000.0
+President,Boston,550000.0
+Analyst,Boston,77000.0
+President,New York,750000.0
+Designer,Boston,66000.0
+Engineer,New York,120000.0
+Designer,Boston,66000.0
+President,Hartford,500000.0
+Analyst,Boston,77000.0
+Engineer,New York,120000.0
+President,Hartford,500000.0
+Designer,Hartford,60000.0
