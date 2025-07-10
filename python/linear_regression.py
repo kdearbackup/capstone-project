@@ -29,3 +29,18 @@ r2 = r2_score(y_test, y_pred)
 print(f'Mean Absolute Error: {mae}')
 print(f'Mean Squared Error: {mse}')
 print(f'R² Score: {r2}')
+
+def predict_salary(job_role, work_location):
+    # Create a DataFrame for the input features with the same column names
+    input_df = pd.DataFrame([[job_role, work_location]], columns=['job_role', 'work_location'])
+    input_features = encoder.transform(input_df).toarray()
+    
+    # Predict the salary
+    predicted_salary = model.predict(input_features)
+    
+    return predicted_salary[0]
+
+job_role_input = 'President'
+work_location_input = 'Hartford'
+predicted_salary = predict_salary(job_role_input, work_location_input)
+print(f'Predicted Salary for {job_role_input} in {work_location_input}: ${predicted_salary:.2f}')
