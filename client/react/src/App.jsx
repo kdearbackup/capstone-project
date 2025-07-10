@@ -11,18 +11,36 @@ import './App.css';
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [username, setUsername] = useState('');
+  const [permissionLevel, setPermissionLevel] = useState('')
+
+  //Split stuff so it forms an array
+  console.log(import.meta.env.VITE_FULL_ACCESS_USERS)
+  const fullAccessUsers = import.meta.env.VITE_FULL_ACCESS_USERS.split(',');
+  const partialAccessUsers = import.meta.env.VITE_PARTIAL_ACCESS_USERS.split(',');
+  const limitedAccessUsers = import.meta.env.VITE_LIMITED_ACCESS_USERS.split(',');
 
   const handleLogin = (user) => {
     setIsAuthenticated(true);
-    console.log(user)
+    console.log(user);
     setUsername(user);
+
+    console.log(fullAccessUsers.includes(user))
+    // Check if user is in list for different access levels
+    if (fullAccessUsers.includes(user)) {
+      setPermissionLevel('full');
+    } else if (partialAccessUsers.includes(user)) {
+      setPermissionLevel('partial');
+    } else if (limitedAccessUsers.includes(user)) {
+      setPermissionLevel('limited');
+    }
+
   };
 
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">MyApp</Link>
+          <Link className="navbar-brand" to="/">Directory App</Link>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -41,9 +59,9 @@ function App() {
       <div className="container mt-4">
         {isAuthenticated ? (
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home username={username}/>} />
             <Route path="/lookup" element={<LookupPage />} />
-            <Route path="/settings" element={<SettingsPage username={username}/>} />
+            <Route path="/settings" element={<SettingsPage username={username} permissionLevel={permissionLevel}/>} />
           </Routes>
         ) : (
           <Login onLogin={handleLogin} />
