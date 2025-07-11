@@ -1,13 +1,11 @@
 import js from '@eslint/js';
-import json from '@eslint/json';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
   {
-    files: ['src/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     plugins: { js },
     extends: ['js/recommended'],
   },
@@ -15,17 +13,21 @@ export default defineConfig([
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
-  tseslint.configs.recommended,
   {
-    files: ['**/*.json'],
-    plugins: { json },
-    language: 'json/json',
-    extends: ['json/recommended'],
-  },
-  {
-    ignores: ['.node_modules/*', 'dist', '*.json'],
-  },
-  {
+    files: ['src/**/*.ts'],
+    languageOptions: {
+      globals: globals.browser, // Or node, etc., depending on your environment
+      parser: tseslint.parser,
+      parserOptions: {
+        project: './tsconfig.json', // Or an array of tsconfig files
+      },
+      globals: {
+        ...globals.node, // Node.js globals for server-side code
+      },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint.plugin,
+    },
     rules: {
       'no-unused-vars': 'error',
       'no-unused-expressions': 'error',
@@ -34,5 +36,5 @@ export default defineConfig([
       'prefer-const': 'error',
     },
   },
-  eslintPluginPrettierRecommended,
+  tseslint.configs.recommended,
 ]);

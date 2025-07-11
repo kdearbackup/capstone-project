@@ -1,6 +1,6 @@
 # Searchable Enterprise Directory
 
-### Overview
+## Overview
 
 A React web application to allow employees to search an enterprise-wide employee directory. The directory includes:
 
@@ -20,7 +20,7 @@ Salary is confidential information so:
 - node.js to build a web service to read and write data.
 - Build the web application in React.
 
-### Data Analysis
+## Data Analysis
 
 Create a solution that predicts salary based on job role and location.
 
@@ -30,11 +30,11 @@ Create a solution that predicts salary based on job role and location.
 
 TIP: Investigate using the python-shell npm package in Express to call Python from JavaScript. Another option is to use Flask to create the RESTful service.
 
-# 📘 API Endpoints – Enterprise Employee Directory
+## 📘 API Endpoints – Enterprise Employee Directory
 
 ---
 
-## 🔐 Authentication
+### 🔐 Authentication
 
 | Method | Endpoint             | Description                         |
 | ------ | -------------------- | ----------------------------------- |
@@ -43,7 +43,7 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 👤 User Profile
+### 👤 User Profile
 
 | Method | Endpoint               | Description                  |
 | ------ | ---------------------- | ---------------------------- |
@@ -52,7 +52,7 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 👥 Employee Management (HR/Admin only)
+### 👥 Employee Management (HR/Admin only)
 
 | Method | Endpoint             | Description                               |
 | ------ | -------------------- | ----------------------------------------- |
@@ -64,7 +64,7 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 💵 Salary Access (with role-based rules)
+### 💵 Salary Access (with role-based rules)
 
 | Method | Endpoint                    | Description                                           |
 | ------ | --------------------------- | ----------------------------------------------------- |
@@ -78,7 +78,7 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 📈 Reporting & Hierarchy
+### 📈 Reporting & Hierarchy
 
 | Method | Endpoint                     | Description                            |
 | ------ | ---------------------------- | -------------------------------------- |
@@ -86,7 +86,7 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 🔍 Search / Utilities
+### 🔍 Search / Utilities
 
 | Method | Endpoint                          | Description                          |
 | ------ | --------------------------------- | ------------------------------------ |
