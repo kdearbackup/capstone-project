@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // middleware to parse JSON requests
-app.use(bodyParson.json());
+app.use(bodyParser.json());
 
 // Define a route for the root URL ("/")
 app.get('/', (req, res) => {
@@ -13,8 +13,10 @@ app.get('/', (req, res) => {
 });
 
 // New route for predicting salary
-app.post('/predict-salary', (req,res) => {
+app.get('/predict-salary', (req,res) => {
+  res.send('Hello World for Salary!')
   const {jobRole, location } = req.body;
+  
 
     //Options for PythonShell
     const options = {
@@ -27,7 +29,7 @@ app.post('/predict-salary', (req,res) => {
     pythonShell.run('linear_regression.py', options, (err, results) => {
       if (err){
         console.error('Error executing Python script:', err);
-        return res.status(500).json({ error: 'Internal Server Error'});
+        return res.status(500).json({ error: 'Internal Server Error, details: err.message'});
       }
 
       const predictedSalary = results[0];

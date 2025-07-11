@@ -4,6 +4,7 @@ import Home from './components/Home';
 import LookupPage from './components/LookupPage';
 import SettingsPage from './components/SettingsPage';
 import Login from './components/Login';
+import PredictedSalary from './components/salaryPrediction';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -51,6 +52,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to="/settings">Settings</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/predict-salary">Predict Salary </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,6 +65,7 @@ function App() {
             <Route path="/" element={<Home username={username}/>} />
             <Route path="/lookup" element={<LookupPage />} />
             <Route path="/settings" element={<SettingsPage username={username} permissionLevel={permissionLevel}/>} />
+            <Route path="/predict-salary" element={<PredictedSalary />} />
           </Routes>
         ) : (
           <Login onLogin={handleLogin} />
