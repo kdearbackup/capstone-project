@@ -1,0 +1,366 @@
+[
+  {
+    "_id": "6870974c65ce28a7a6e2a129",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a127",
+      "email": "aisha.siddiqa@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Aisha",
+      "lastName": "Siddiqa",
+      "_id": "6870b3b46a989fce5b0b3b06"
+    },
+    "phoneNo": "1234567890",
+    "workLocation": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a12b"
+    },
+    "salary": 82000,
+    "jobTitle": "Backend Developer",
+    "managerId": "68708dcc6b89035b5ce19618",
+    "createdAt": "2025-07-11T04:47:08.621Z",
+    "updatedAt": "2025-07-11T06:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a130",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a128",
+      "email": "john.doe@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "_id": "6870b3b46a989fce5b0b3b07"
+    },
+    "phoneNo": "2345678901",
+    "workLocation": {
+      "city": "Washington DC",
+      "state": "DC",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a12c"
+    },
+    "salary": 90000,
+    "jobTitle": "Frontend Developer",
+    "managerId": "68708dcc6b89035b5ce19619",
+    "createdAt": "2025-07-11T05:47:08.621Z",
+    "updatedAt": "2025-07-11T07:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a131",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a129",
+      "email": "jane.smith@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "_id": "6870b3b46a989fce5b0b3b08"
+    },
+    "phoneNo": "3456789012",
+    "workLocation": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a12d"
+    },
+    "salary": 95000,
+    "jobTitle": "Data Scientist",
+    "managerId": "68708dcc6b89035b5ce19620",
+    "createdAt": "2025-07-11T06:47:08.621Z",
+    "updatedAt": "2025-07-11T08:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a132",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a130",
+      "email": "michael.jones@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Michael",
+      "lastName": "Jones",
+      "_id": "6870b3b46a989fce5b0b3b09"
+    },
+    "phoneNo": "4567890123",
+    "workLocation": {
+      "city": "Hartford",
+      "state": "CT",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a12e"
+    },
+    "salary": 87000,
+    "jobTitle": "Project Manager",
+    "managerId": "68708dcc6b89035b5ce19621",
+    "createdAt": "2025-07-11T07:47:08.621Z",
+    "updatedAt": "2025-07-11T09:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a133",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a131",
+      "email": "emily.davis@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "_id": "6870b3b46a989fce5b0b3b10"
+    },
+    "phoneNo": "5678901234",
+    "workLocation": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a12f"
+    },
+    "salary": 92000,
+    "jobTitle": "UX Designer",
+    "managerId": "68708dcc6b89035b5ce19622",
+    "createdAt": "2025-07-11T08:47:08.621Z",
+    "updatedAt": "2025-07-11T10:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a134",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a132",
+      "email": "william.brown@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "William",
+      "lastName": "Brown",
+      "_id": "6870b3b46a989fce5b0b3b11"
+    },
+    "phoneNo": "6789012345",
+    "workLocation": {
+      "city": "Washington DC",
+      "state": "DC",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a130"
+    },
+    "salary": 88000,
+    "jobTitle": "QA Engineer",
+    "managerId": "68708dcc6b89035b5ce19623",
+    "createdAt": "2025-07-11T09:47:08.621Z",
+    "updatedAt": "2025-07-11T11:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a135",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a133",
+      "email": "olivia.wilson@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Olivia",
+      "lastName": "Wilson",
+      "_id": "6870b3b46a989fce5b0b3b12"
+    },
+    "phoneNo": "7890123456",
+    "workLocation": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a131"
+    },
+    "salary": 93000,
+    "jobTitle": "Marketing Specialist",
+    "managerId": "68708dcc6b89035b5ce19624",
+    "createdAt": "2025-07-11T10:47:08.621Z",
+    "updatedAt": "2025-07-11T12:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a136",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a134",
+      "email": "noah.martin@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Noah",
+      "lastName": "Martin",
+      "_id": "6870b3b46a989fce5b0b3b13"
+    },
+    "phoneNo": "8901234567",
+    "workLocation": {
+      "city": "Hartford",
+      "state": "CT",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a132"
+    },
+    "salary": 94000,
+    "jobTitle": "Business Analyst",
+    "managerId": "68708dcc6b89035b5ce19625",
+    "createdAt": "2025-07-11T11:47:08.621Z",
+    "updatedAt": "2025-07-11T13:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a137",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a135",
+      "email": "sophia.thomas@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Sophia",
+      "lastName": "Thomas",
+      "_id": "6870b3b46a989fce5b0b3b14"
+    },
+    "phoneNo": "9012345678",
+    "workLocation": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a133"
+    },
+    "salary": 95000,
+    "jobTitle": "HR Manager",
+    "managerId": "68708dcc6b89035b5ce19626",
+    "createdAt": "2025-07-11T12:47:08.621Z",
+    "updatedAt": "2025-07-11T14:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a138",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a136",
+      "email": "liam.jackson@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Liam",
+      "lastName": "Jackson",
+      "_id": "6870b3b46a989fce5b0b3b15"
+    },
+    "phoneNo": "0123456789",
+    "workLocation": {
+      "city": "Washington DC",
+      "state": "DC",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a134"
+    },
+    "salary": 96000,
+    "jobTitle": "Software Engineer",
+    "managerId": "68708dcc6b89035b5ce19627",
+    "createdAt": "2025-07-11T13:47:08.621Z",
+    "updatedAt": "2025-07-11T15:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a139",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a137",
+      "email": "emma.white@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Emma",
+      "lastName": "White",
+      "_id": "6870b3b46a989fce5b0b3b16"
+    },
+    "phoneNo": "1234567890",
+    "workLocation": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a135"
+    },
+    "salary": 97000,
+    "jobTitle": "Product Manager",
+    "managerId": "68708dcc6b89035b5ce19628",
+    "createdAt": "2025-07-11T14:47:08.621Z",
+    "updatedAt": "2025-07-11T16:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a140",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a138",
+      "email": "oliver.harris@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Oliver",
+      "lastName": "Harris",
+      "_id": "6870b3b46a989fce5b0b3b17"
+    },
+    "phoneNo": "2345678901",
+    "workLocation": {
+      "city": "Hartford",
+      "state": "CT",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a136"
+    },
+    "salary": 98000,
+    "jobTitle": "DevOps Engineer",
+    "managerId": "68708dcc6b89035b5ce19629",
+    "createdAt": "2025-07-11T15:47:08.621Z",
+    "updatedAt": "2025-07-11T17:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a141",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a139",
+      "email": "ava.clark@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Ava",
+      "lastName": "Clark",
+      "_id": "6870b3b46a989fce5b0b3b18"
+    },
+    "phoneNo": "3456789012",
+    "workLocation": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a137"
+    },
+    "salary": 99000,
+    "jobTitle": "Network Engineer",
+    "managerId": "68708dcc6b89035b5ce19630",
+    "createdAt": "2025-07-11T16:47:08.621Z",
+    "updatedAt": "2025-07-11T18:48:20.780Z",
+    "__v": 0
+  },
+  {
+    "_id": "6870974c65ce28a7a6e2a142",
+    "userId": {
+      "_id": "6870974c65ce28a7a6e2a140",
+      "email": "isabella.lewis@abc.com",
+      "role": "employee"
+    },
+    "name": {
+      "firstName": "Isabella",
+      "lastName": "Lewis",
+      "_id": "6870b3b46a989fce5b0b3b19"
+    },
+    "phoneNo": "4567890123",
+    "workLocation": {
+      "city": "Washington DC",
+      "state": "DC",
+      "country": "USA",
+      "_id": "6870974c65ce28a7a6e2a138"
+    },
+    "salary": 100000,
+    "jobTitle": "Security Analyst",
+    "managerId": "68708dcc6b89035b5ce19631",
+    "createdAt": "2025-07-11T17:47:08.621Z",
+    "updatedAt": "2025-07-11T19:48:20.780Z",
+    "__v": 0
+  }
+]

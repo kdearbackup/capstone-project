@@ -1,3 +1,5 @@
+import mockData from "../mockData.json"
+
 const Home = ({ username }) => {
     return (
     <div>
@@ -13,21 +15,28 @@ const Home = ({ username }) => {
       </div>
       <div className="home-container">
         <h5 className="home-greeting">How it Works</h5>
-        <p className="home-description"> You can search for employee information using any of the following
-            <br/>- Full Name
-            <br/>- Phone Number
-            <br/>- Role
-            <br/>- Location
-        </p>
-      </div>
-      <div className="home-container">
-        <h5 className="home-greeting">What It's Built With</h5>
-        <p className="home-description">This app makes use of
-            <br/>- React: Assembling Frontend 
-            <br/>- MongoDB: Backend data
-            <br/>- Express: Handling routes between React and MongoDB
-            <br/>- Pandas: Linear Regression model for estimating salary
-        </p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Salary</th>
+              <th>Job Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            {mockData.map((user, index) => (
+              <tr key={index}>
+                <td>{user.name.firstName} {user.name.lastName}</td>
+                <td>{user.userId.email}</td>
+                <td>{user.phoneNo}</td>
+                <td>{user.salary}</td>
+                <td>{user.jobTitle}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
         </div>
     );

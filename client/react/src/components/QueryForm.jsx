@@ -5,11 +5,12 @@ const QueryForm = ({ onQuery }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [jobRole, setJobRole] = useState('');
   const [location, setLocation] = useState('');
+  const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Pass the query parameters to the parent component or function
-    onQuery({ name, phoneNumber, jobRole, location });
+    onQuery({ name, phoneNumber, email, jobRole, location });
   };
 
   return (
@@ -31,21 +32,28 @@ const QueryForm = ({ onQuery }) => {
         />
       </div>
       <div style={{ marginBottom: '20px' }}>
+        <label>Email :</label>
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <div style={{ marginBottom: '20px' }}>
         <label>Job Role :</label>
         <select value={jobRole} onChange={(e) => setJobRole(e.target.value)}>
           <option value="">Select a job role</option>
-          <option value="developer">Developer</option>
-          <option value="designer">Designer</option>
+          <option value="employee">Employee</option>
           <option value="manager">Manager</option>
-          <option value="analyst">Analyst</option>
+          <option value="hr">HR</option>
         </select>
       </div>
       <div style={{ marginBottom: '20px' }}>
         <label>Location :</label>
         <select value={location} onChange={(e) => setLocation(e.target.value)}>
           <option value="">Select a location</option>
-          <option value="new-york">New York</option>
-          <option value="washington-dc">Washington DC</option>
+          <option value="new york">New York</option>
+          <option value="washington dc">Washington DC</option>
           <option value="boston">Boston</option>
           <option value="hartford">Hartford</option>
         </select>
