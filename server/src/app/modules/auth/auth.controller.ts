@@ -24,14 +24,14 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   res.cookie('accessToken', accessToken, {
     secure: config.node_env === 'production',
     httpOnly: true,
-    sameSite: 'none',
+    sameSite: 'strict',
     maxAge: 1000 * 60 * 60 * 24,
   });
 
   res.cookie('refreshToken', refreshToken, {
     secure: config.node_env === 'production',
     httpOnly: true,
-    sameSite: 'none',
+    sameSite: 'strict',
     maxAge: 1000 * 60 * 60 * 24,
   });
 
@@ -62,7 +62,7 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
   res.cookie('accessToken', accessToken, {
     secure: config.node_env === 'production',
     httpOnly: true,
-    sameSite: 'none',
+    sameSite: 'strict',
     maxAge: 1000 * 60 * 60 * 24,
   });
 
