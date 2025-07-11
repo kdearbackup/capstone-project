@@ -7,14 +7,14 @@ const Home = ({ username }) => {
         <h2 className="home-title">Home Page</h2>
         <h5 className="home-greeting">Hi {username}!</h5>
         <p className="home-description">
-          Welcome to the Directory App, where you're able to look up employee information.
+          Welcome to the Travelers Directory App, where you're able to look up employee information.
         </p>
         <p className="home-footer">
           This app was designed by Kam, Adam, and Sakhawat as part of the Learning Accelerator Capstone Project.
         </p>
       </div>
       <div className="home-container">
-        <h5 className="home-greeting">How it Works</h5>
+        <h5 className="home-greeting">Full Directory</h5>
         <table border="1">
           <thead>
             <tr>
