@@ -1,6 +1,6 @@
 import httpStatus from 'http-status';
 import { JwtPayload } from 'jsonwebtoken';
-import mongoose, { Types } from 'mongoose';
+import mongoose, { PipelineStage, Types } from 'mongoose';
 import AppError from '../../errors/AppError';
 import { UserRole } from '../users/users.constant';
 import { UserModel } from '../users/users.model';
@@ -10,6 +10,7 @@ import {
   TUserDetails,
 } from './userDetails.interface';
 import { UserDetailsModel } from './userDetails.model';
+import { TSearchRequest } from './userDetails.util';
 
 const getMeFromDb = async (payLoad: JwtPayload) => {
   const myData = await UserModel.aggregate([
@@ -296,6 +297,127 @@ const getAllHrFromDB = async () => {
   return hrData;
 };
 
+const searchEmployeeFromDb = async (
+  authUser: JwtPayload,
+  filters: TSearchRequest,
+) => {
+  const { email, role, firstName, lastName, city, phoneNo, jobTitle } = filters;
+  const loggedInUser = await UserDetailsModel.findOne({
+    userId: new Types.ObjectId(authUser.id),
+  });
+
+  if (!loggedInUser) {
+    throw new AppError(httpStatus.NOT_FOUND, 'Logged in user data not found');
+  }
+
+  const andConditions: any[] = [];
+
+  if (email) {
+    andConditions.push({ email: { $regex: email, $options: 'i' } });
+  }
+  if (role) {
+    andConditions.push({ role });
+  }
+
+  if (firstName) {
+    andConditions.push({
+      'userDetails.name.firstName': { $regex: firstName, $options: 'i' },
+    });
+  }
+  if (lastName) {
+    andConditions.push({
+      'userDetails.name.lastName': { $regex: lastName, $options: 'i' },
+    });
+  }
+  if (city) {
+    andConditions.push({
+      'userDetails.workLocation.city': { $regex: city, $options: 'i' },
+    });
+  }
+  if (phoneNo) {
+    andConditions.push({
+      'userDetails.phoneNo': { $regex: phoneNo, $options: 'i' },
+    });
+  }
+
+  if (jobTitle) {
+    andConditions.push({
+      'userDetails.jobTitle': { $regex: jobTitle, $options: 'i' },
+    });
+  }
+  const matchStage: Record<string, any> =
+    andConditions.length > 0 ? { $and: andConditions } : {};
+
+  // Salary visibility logic
+  const projectFields: any = {
+    email: 1,
+    role: 1,
+    userDetails: {
+      name: 1,
+      phoneNo: 1,
+      workLocation: 1,
+      jobTitle: 1,
+      managerId: 1,
+    },
+  };
+
+  const pipeline: PipelineStage[] = [
+    {
+      $lookup: {
+        from: 'user-details',
+        localField: '_id',
+        foreignField: 'userId',
+        as: 'userDetails',
+      },
+    },
+    { $unwind: '$userDetails' },
+    { $match: matchStage },
+  ];
+
+  if (authUser.role === 'hr') {
+    // HR can see salary for all users
+    projectFields.userDetails.salary = 1;
+    pipeline.push({ $project: projectFields });
+  } else {
+    // Employee and Manager: conditionally show salary only for allowed users
+    pipeline.push({
+      $addFields: {
+        'userDetails.salary': {
+          $cond: [
+            {
+              $or: [
+                // Always show own salary
+                {
+                  $eq: ['$_id', new Types.ObjectId(authUser.id)],
+                },
+                // If manager, show salary for direct reports
+                ...(authUser.role === 'manager'
+                  ? [
+                      {
+                        $eq: [
+                          '$userDetails.managerId',
+                          new Types.ObjectId(loggedInUser._id),
+                        ],
+                      },
+                    ]
+                  : []),
+              ],
+            },
+            '$userDetails.salary', // Show salary
+            null, // Otherwise hide salary
+          ],
+        },
+      },
+    });
+    projectFields.userDetails.salary = 1;
+    pipeline.push({ $project: projectFields });
+  }
+
+  const result = await UserModel.aggregate(pipeline);
+
+  return result;
+};
+
 export const userDetailsService = {
   getMeFromDb,
   updateMyProfile,
@@ -305,4 +427,5 @@ export const userDetailsService = {
   getAnEmployeeFromDb,
   getAllTheManagerFromDb,
   getAllHrFromDB,
+  searchEmployeeFromDb,
 };

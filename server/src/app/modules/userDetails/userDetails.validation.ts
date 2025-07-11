@@ -87,8 +87,34 @@ const UpdateHRManagerDetailValidationSchema = z.object({
   }),
 });
 
+export const searchValidationSchema = z.object({
+  name: z
+    .object({
+      firstName: z.string().min(1).optional(),
+      lastName: z.string().min(1).optional(),
+    })
+    .optional(),
+
+  workLocation: z
+    .object({
+      city: z.string().min(1).optional(),
+    })
+    .optional(),
+
+  phoneNo: z
+    .string()
+    .regex(/^\d{10}$/, {
+      message: 'Phone number must be exactly 10 digits',
+    })
+    .optional(),
+
+  jobTitle: z.string().min(1).optional(),
+  email: z.email().optional(),
+});
+
 export const userDetailsValidationSchema = {
   createUserValidationSchema,
   UpdateEmployeeDetailValidationSchema,
   UpdateHRManagerDetailValidationSchema,
+  searchValidationSchema,
 };

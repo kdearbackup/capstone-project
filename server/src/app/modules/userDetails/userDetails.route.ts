@@ -55,6 +55,13 @@ router.get(
   userDetailsController.getHRsData,
 );
 
+router.post(
+  '/employees/search',
+  auth(UserRole.hr, UserRole.manager, UserRole.employee),
+  validateRequest(userDetailsValidationSchema.searchValidationSchema),
+  userDetailsController.searchEmployee,
+);
+
 router.delete(
   '/employees/:userId',
   auth(UserRole.hr, UserRole.manager),
