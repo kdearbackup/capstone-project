@@ -32,9 +32,9 @@ Create a solution that predicts salary based on job role and location.
 
 TIP: Investigate using the python-shell npm package in Express to call Python from JavaScript. Another option is to use Flask to create the RESTful service.
 
-# 📘 API Endpoints – Enterprise Employee Directory
-
 ---
+
+# 📘 API Endpoints
 
 ## 🔐 Authentication
 
@@ -73,6 +73,6 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ## 🔍 Search / Utilities
 
-| Method | Endpoint                          | Description                          |
-| ------ | --------------------------------- | ------------------------------------ |
-| GET    | `/api/employees/search?q=<query>` | Search employees by name, role, etc. |
+| Method | Endpoint                             | Description                          |
+| ------ | ------------------------------------ | ------------------------------------ |
+| POST   | `/api/user-details/employees/search` | Search employees by name, role, etc. |

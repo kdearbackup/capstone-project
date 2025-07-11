@@ -121,6 +121,24 @@ const getHRsData = catchAsync(
   },
 );
 
+const searchEmployee = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const filter = req.body;
+    const authUser = req.user;
+    const result = await userDetailsService.searchEmployeeFromDb(
+      authUser,
+      filter,
+    );
+
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Employee data retrieved successfully',
+      data: result,
+    });
+  },
+);
+
 export const userDetailsController = {
   getMe,
   updateMyProfile,
@@ -130,4 +148,5 @@ export const userDetailsController = {
   getAnEmployee,
   getManagersData,
   getHRsData,
+  searchEmployee,
 };
