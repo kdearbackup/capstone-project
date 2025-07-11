@@ -71,28 +71,6 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 
 ---
 
-## 💵 Salary Access (with role-based rules)
-
-| Method | Endpoint                    | Description                                           |
-| ------ | --------------------------- | ----------------------------------------------------- |
-| GET    | `/api/employees/:id/salary` | View salary of another employee (with access control) |
-
-> **Access Rules:**
->
-> - Regular users can view **their own** salary
-> - Managers can view salaries of **their direct reports**
-> - HR can view **anyone's** salary
-
----
-
-## 📈 Reporting & Hierarchy
-
-| Method | Endpoint                     | Description                            |
-| ------ | ---------------------------- | -------------------------------------- |
-| GET    | `/api/employees/:id/manager` | Get the manager of a specific employee |
-
----
-
 ## 🔍 Search / Utilities
 
 | Method | Endpoint                          | Description                          |
