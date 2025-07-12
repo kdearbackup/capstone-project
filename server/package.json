@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/python-shell": "^0.4.2",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -26,6 +27,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.2",
+    "python-shell": "^5.0.0",
     "validator": "^13.15.15",
     "zod": "^4.0.2"
   },

@@ -76,3 +76,9 @@ TIP: Investigate using the python-shell npm package in Express to call Python fr
 | Method | Endpoint                             | Description                          |
 | ------ | ------------------------------------ | ------------------------------------ |
 | POST   | `/api/user-details/employees/search` | Search employees by name, role, etc. |
+
+## 🔮 Prediction
+
+| Method | Endpoint              | Description                                                           |
+| ------ | --------------------- | --------------------------------------------------------------------- |
+| POST   | `/api/predict/salary` | Predict salary based on role, job title, and location using ML model. |
