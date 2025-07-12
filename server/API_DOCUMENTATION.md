@@ -699,3 +699,45 @@ Base Path: `/api/user-details`
   ]
 }
 ```
+
+## Module: Prediction
+
+This module provides endpoints for interacting with the trained machine learning model.
+
+**Base Path:** `/api/predict`
+
+---
+
+### 🔮 Predict Employee Salary
+
+- **Endpoint:** `POST /salary`
+- **Description:**
+  Predicts an estimated salary by sending job details to the trained Linear Regression model.
+  This endpoint is ideal for _"what-if"_ scenarios, like estimating a salary for a new role or different location.
+- **Authorization:**
+  Accessible to any logged-in user (`hr`, `manager`, `employee`).
+- **Request**:
+  - **Type:** JSON
+  - **Body:** An object containing the features required by the model.
+
+  ```json
+  {
+    "role": "employee",
+    "jobTitle": "Software Engineer",
+    "location": "New York"
+  }
+  ```
+
+- **Response**:
+  - **Status**: `200 OK`
+  - **Body**: A JSON object containing the predicted salary.
+
+  ```json
+  {
+    "success": true,
+    "message": "Salary predicted successfully",
+    "data": {
+      "predicted_salary": 70531.88
+    }
+  }
+  ```
