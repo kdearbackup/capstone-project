@@ -19,7 +19,10 @@ const Home = () => {
 						A one-stop employee directory — empowering HR and managers to manage
 						teams, and employees to find coworkers and update their profiles.
 					</p>
-					<Link to="/directory" className="btn btn-primary">
+					<Link
+						to="/directory"
+						className="btn btn-primary font-semibold text-black"
+					>
 						Get Started
 					</Link>
 				</div>
