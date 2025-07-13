@@ -25,12 +25,6 @@ Salary is confidential information so:
 - An employee's manager can view the salary of any of their direct reports.
 - An employee in the HR role can view anyone's salary.
 
-### Building the Application
-
-- Mongo DB backend data.
-- node.js to build a web service to read and write data.
-- Build the web application in React.
-
 ### Data Analysis & Salary Prediction
 
 This feature predicts an employee's salary based on their job role, job title and location. The implementation consists of several parts:
