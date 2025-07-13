@@ -95,29 +95,29 @@ Before running the server, you **must** create a `.env` file in the root of the 
 Create the file `server/.env` and populate it with the following variables.
 
 ```env
-	# --- Server Configuration ---
-	PORT=4000
-	NODE_ENV=development
+# --- Server Configuration ---
+PORT=4000
+NODE_ENV=development
 
-	# --- Database Configuration ---
-	# Your MongoDB connection string
-	DATABASE_URL=mongodb_connection_URI
+# --- Database Configuration ---
+# Your MongoDB connection string
+DATABASE_URL=mongodb_connection_URI
 
-	# --- Security & Authentication ---
-	# The cost factor for hashing passwords
-	BCRYPT_SALT_ROUNDS=bcrypt_salt_rounds
+# --- Security & Authentication ---
+# The cost factor for hashing passwords
+BCRYPT_SALT_ROUNDS=bcrypt_salt_rounds
 
-	# Secret keys for signing JWTs (use strong, random strings)
-	JWT_ACCESS_SECRET=your_super_secret_jwt_access_key
-	JWT_REFRESH_SECRET=your_super_secret_jwt_refresh_key
+# Secret keys for signing JWTs (use strong, random strings)
+JWT_ACCESS_SECRET=your_super_secret_jwt_access_key
+JWT_REFRESH_SECRET=your_super_secret_jwt_refresh_key
 
-	# How long the tokens should be valid for (e.g., 1d, 7d, 15m)
-	JWT_ACCESS_TOKEN_EXPIRES_IN=1d
-	JWT_REFRESH_TOKEN_EXPIRES_IN=7d
+# How long the tokens should be valid for (e.g., 1d, 7d, 15m)
+JWT_ACCESS_TOKEN_EXPIRES_IN=1d
+JWT_REFRESH_TOKEN_EXPIRES_IN=7d
 
-	# --- Frontend URI ---
-	# The base URL of your running frontend application for CORS
-	FRONT_END_BASE_URI=http://localhost:5173
+# --- Frontend URI ---
+# The base URL of your running frontend application for CORS
+FRONT_END_BASE_URI=http://localhost:5173
 ```
 
 #### 2. Package Installation
