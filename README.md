@@ -33,6 +33,29 @@ This feature predicts an employee's salary based on their job role, job title an
 - **Machine Learning Model:** A `sklearn.linear_model.LinearRegression` model is trained to predict salary based on job role and location.
 - **Prediction UI:** A React component provides an interface to input a job role and location. This data is sent to the backend via a RESTful service, and the component displays the returned predicted salary.
 
+### Application Workflow and User Roles
+
+This section outlines the standard user lifecycle and the permissions associated with each role within the Enterprise Directory application.
+
+#### User Onboarding and First Login
+
+The system is designed with a secure onboarding process for new employees.
+
+1.  **Registration by HR:** An employee's journey begins when a member of the Human Resources (HR) department registers them in the system. Employees cannot register themselves.
+2.  **Initial Credentials:** Upon registration, the HR member provides the new employee with their initial credentials (email and a temporary password).
+3.  **First Login:** The employee uses these credentials for their first login.
+4.  **Forced Password Change:** For security purposes, the system will immediately detect that this is the user's first login and will prompt them to change their password.
+5.  **Re-authentication:** After successfully setting a new, secure password, the user is redirected back to the login page.
+6.  **Normal Access:** The employee can now log in with their new password to gain full access to the application based on their role.
+
+#### Role-Based Permissions
+
+The application enforces a strict role-based access control (RBAC) model to ensure data security and integrity.
+
+- **Employee:** Can view the directory and update their own non-critical personal information, such as their phone number and name, work location.
+- **Manager:** Has all the permissions of an Employee. Additionally, they can view their direct reports' full profiles (including salary) and update critical data for their team members, such as their job title, role, salary, and assigned manager.
+- **HR (Human Resources):** Possesses the highest level of access. They can perform all actions of a Manager but for any employee in the organization. They are also the only role authorized to register new employees.
+
 ### Tech Stack
 
 - **Framework**: React (with Vite)
