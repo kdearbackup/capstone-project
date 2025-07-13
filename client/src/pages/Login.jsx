@@ -81,7 +81,7 @@ const Login = () => {
 					<div className="form-control mt-6">
 						<button
 							type="submit"
-							className="btn btn-primary text-black font-semibold"
+							className="btn btn-primary text-black font-semibold px-7"
 						>
 							Login
 						</button>
