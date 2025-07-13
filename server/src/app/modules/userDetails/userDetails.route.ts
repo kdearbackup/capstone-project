@@ -45,7 +45,7 @@ router.get(
 
 router.get(
   '/managers',
-  auth(UserRole.hr, UserRole.manager),
+  auth(UserRole.hr, UserRole.manager, UserRole.employee),
   userDetailsController.getManagersData,
 );
 
@@ -66,6 +66,12 @@ router.delete(
   '/employees/:userId',
   auth(UserRole.hr, UserRole.manager),
   userDetailsController.deleteAnEmployee,
+);
+
+router.get(
+  '/manager/my-team',
+  auth(UserRole.manager),
+  userDetailsController.getAllEmployeesUndarLoggedInManager,
 );
 
 export const userDetailsRouter = router;
