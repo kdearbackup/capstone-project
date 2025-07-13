@@ -161,16 +161,17 @@ The following tables describe all available API endpoints.
 
 ### User & Employee Management
 
-| Method  | Endpoint                             | Description                                                                                  | Access      |
-| :------ | :----------------------------------- | :------------------------------------------------------------------------------------------- | :---------- |
-| `GET`   | `/api/user-details/me`               | Retrieves the profile of the currently logged-in user.                                       | All         |
-| `PATCH` | `/api/user-details/update-me`        | Allows a user to update their own non-critical profile information (name, phone, location).  | All         |
-| `GET`   | `/api/user-details/employees`        | Retrieves a list of all employees with limited data.                                         | All         |
-| `GET`   | `/api/user-details/employees/:id`    | Retrieves the full profile of a specific employee by their `userDetails` ID.                 | Manager, HR |
-| `PATCH` | `/api/user-details/employee/:userId` | Allows a manager or HR to update an employee's role, salary, job title, or assigned manager. | Manager, HR |
-| `POST`  | `/api/user-details/employees/search` | Searches for employees based on various criteria (name, email, role, etc.).                  | All         |
-| `GET`   | `/api/user-details/managers`         | Retrieves a list of all users with the "manager" role. Used for dropdowns.                   | All         |
-| `GET`   | `/api/user-details/manager/my-team`  | Retrieves a list of all employees that report directly to the logged-in manager.             | Manager     |
+| Method   | Endpoint                             | Description                                                                                  | Access      |
+| :------- | :----------------------------------- | :------------------------------------------------------------------------------------------- | :---------- |
+| `GET`    | `/api/user-details/me`               | Retrieves the profile of the currently logged-in user.                                       | All         |
+| `PATCH`  | `/api/user-details/update-me`        | Allows a user to update their own non-critical profile information (name, phone, location).  | All         |
+| `GET`    | `/api/user-details/employees`        | Retrieves a list of all employees with limited data.                                         | All         |
+| `GET`    | `/api/user-details/employees/:id`    | Retrieves the full profile of a specific employee by their `userDetails` ID.                 | Manager, HR |
+| `PATCH`  | `/api/user-details/employee/:userId` | Allows a manager or HR to update an employee's role, salary, job title, or assigned manager. | Manager, HR |
+| `DELETE` | `/api/user-details/employees/:id`    | Deletes a specific employee by their ID.                                                     | Manager, HR |
+| `POST`   | `/api/user-details/employees/search` | Searches for employees based on various criteria (name, email, role, etc.).                  | All         |
+| `GET`    | `/api/user-details/managers`         | Retrieves a list of all users with the "manager" role. Used for dropdowns.                   | All         |
+| `GET`    | `/api/user-details/manager/my-team`  | Retrieves a list of all employees that report directly to the logged-in manager.             | Manager     |
 
 ### Salary Prediction
 
