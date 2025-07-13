@@ -178,3 +178,15 @@ The following tables describe all available API endpoints.
 | Method | Endpoint                     | Description                                                                          | Access |
 | :----- | :--------------------------- | :----------------------------------------------------------------------------------- | :----- |
 | `POST` | `/api/predict-salary/salary` | Takes a job role and location and returns an estimated salary based on the ML model. | All    |
+
+## Test Credentials
+
+Use the following credentials to test different user roles and permissions.
+
+| Email                     | Password       | Role       | Notes               |
+| :------------------------ | :------------- | :--------- | :------------------ |
+| `daniel.robinson@abc.com` | `Robinson2024` | `manager`  | Manager of managers |
+| `priya.sharma@abc.com`    | `Sharma2024`   | `hr`       |                     |
+| `lena.martinez@abc.com`   | `Martinez2024` | `manager`  |                     |
+| `tom.holland@abc.com`     | `Holland2025`  | `employee` |                     |
+| `aisha.siddiqa@abc.com`   | `Siddiqa2024`  | `employee` |                     |
