@@ -53,23 +53,23 @@ This feature predicts an employee's salary based on their job role, job title an
 
 To get the client running, follow these steps from the project's root directory:
 
-**Navigate to the client directory:**
+**Navigate to the client directory**:
 
-    ```bash
-    	cd client
-    ```
+```bash
+	cd client
+```
 
-**Install all required npm packages:**
+**Install all required npm packages**:
 
-    ```bash
-    	npm install
-    ```
+```bash
+	npm install
+```
 
-3.**Run the development server:**
+**Run the development server**:
 
-    ```bash
-    	npm run dev
-    ```
+```bash
+	npm run dev
+```
 
 The application will be available at `http://localhost:5173`.
 
