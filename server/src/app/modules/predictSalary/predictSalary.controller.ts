@@ -8,14 +8,24 @@ import sendResponse from '../../utils/sendResponse';
 const predictSalary = catchAsync(async (req: Request, res: Response) => {
   const { role, jobTitle, location } = req.body;
 
+  const pythonPath = path.join(
+    process.cwd(),
+    '..',
+    'python',
+    'path',
+    'to',
+    'venv',
+    'bin',
+    'python',
+  );
+
   const options: Record<string, unknown> = {
     mode: 'text',
+    pythonPath: pythonPath,
     pythonOptions: ['-u'],
     scriptPath: path.join(__dirname, '../../scripts/'),
     args: [role, jobTitle, location],
   };
-
-  console.log(options?.scriptPath);
 
   const results = await PythonShell.run('predict.py', options);
 

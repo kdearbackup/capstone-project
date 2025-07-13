@@ -19,7 +19,7 @@ const registerUser = catchAsync(async (req: Request, res: Response) => {
 
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const result = await authServices.loginUser(req.body);
-  const { refreshToken, accessToken, needsPasswordChange } = result;
+  const { refreshToken, accessToken, data } = result;
 
   res.cookie('accessToken', accessToken, {
     secure: config.node_env === 'production',
@@ -39,9 +39,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
     success: true,
     message: 'User is logged in successfully',
-    data: {
-      needsPasswordChange,
-    },
+    data: data,
   });
 });
 

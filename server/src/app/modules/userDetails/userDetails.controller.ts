@@ -139,6 +139,23 @@ const searchEmployee = catchAsync(
   },
 );
 
+const getAllEmployeesUndarLoggedInManager = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const authUser = req.user;
+    const result =
+      await userDetailsService.getAllEmployeesUnderLoggedInManagerFromDb(
+        authUser,
+      );
+
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'All employees reporting to you have been successfully fetched.',
+      data: result,
+    });
+  },
+);
+
 export const userDetailsController = {
   getMe,
   updateMyProfile,
@@ -149,4 +166,5 @@ export const userDetailsController = {
   getManagersData,
   getHRsData,
   searchEmployee,
+  getAllEmployeesUndarLoggedInManager,
 };

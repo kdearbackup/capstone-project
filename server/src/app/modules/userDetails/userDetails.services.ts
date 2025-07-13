@@ -350,9 +350,11 @@ const searchEmployeeFromDb = async (
 
   // Salary visibility logic
   const projectFields: any = {
+    _id: 1,
     email: 1,
     role: 1,
     userDetails: {
+      _id: 1,
       name: 1,
       phoneNo: 1,
       workLocation: 1,
@@ -418,6 +420,30 @@ const searchEmployeeFromDb = async (
   return result;
 };
 
+const getAllEmployeesUnderLoggedInManagerFromDb = async (
+  authUser: JwtPayload,
+) => {
+  const loggedInManagerDetails = await UserDetailsModel.findOne({
+    userId: new Types.ObjectId(authUser.id),
+  });
+
+  if (!loggedInManagerDetails) {
+    throw new AppError(
+      httpStatus.BAD_REQUEST,
+      'Unable to find manager details',
+    );
+  }
+
+  const result = await UserDetailsModel.find({
+    managerId: loggedInManagerDetails._id,
+  }).populate({
+    path: 'userId',
+    select: '-needsPasswordChange -passwordChangedAt -createdAt -updatedAt',
+  });
+
+  return result;
+};
+
 export const userDetailsService = {
   getMeFromDb,
   updateMyProfile,
@@ -428,4 +454,5 @@ export const userDetailsService = {
   getAllTheManagerFromDb,
   getAllHrFromDB,
   searchEmployeeFromDb,
+  getAllEmployeesUnderLoggedInManagerFromDb,
 };

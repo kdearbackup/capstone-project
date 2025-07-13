@@ -114,7 +114,10 @@ const loginUser = async (payLoad: TLoginUser) => {
   return {
     accessToken,
     refreshToken,
-    needsPasswordChange: user.needsPasswordChange,
+    data: {
+      ...jwtPayLoad,
+      needsPasswordChange: user.needsPasswordChange,
+    },
   };
 };
 

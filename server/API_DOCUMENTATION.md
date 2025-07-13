@@ -589,69 +589,69 @@ Base Path: `/api/user-details`
 - **Authorization**: `hr`, `manager`.
 - **Request**: None.
 - **Response**:
-- **Status**: `200 OK`
-- **Body**: An array of user objects who have the 'manager' role.
+  - **Status**: `200 OK`
+  - **Body**: An array of user objects who have the 'manager' role.
 
-```json
-{
-  "success": true,
-  "message": "Managers data retrieved successfully",
-  "data": [
-    {
-      "_id": "68708dcc6b89035b5ce19616",
-      "email": "daniel.robinson@abc.com",
-      "role": "manager",
-      "userDetails": {
-        "_id": "68708dcc6b89035b5ce19618",
-        "userId": "68708dcc6b89035b5ce19616",
-        "name": {
-          "firstName": "Daniel",
-          "lastName": "Robinson",
-          "_id": "68708dcc6b89035b5ce19619"
-        },
-        "phoneNo": "3478925412",
-        "workLocation": {
-          "city": "Seattle",
-          "state": "WA",
-          "country": "USA",
-          "_id": "68708dcc6b89035b5ce1961a"
-        },
-        "jobTitle": "Technical Program Manager",
-        "managerId": null,
-        "createdAt": "2025-07-11T04:06:36.776Z",
-        "updatedAt": "2025-07-11T04:06:36.776Z",
-        "__v": 0
+  ```json
+  {
+    "success": true,
+    "message": "Managers data retrieved successfully",
+    "data": [
+      {
+        "_id": "68708dcc6b89035b5ce19616",
+        "email": "daniel.robinson@abc.com",
+        "role": "manager",
+        "userDetails": {
+          "_id": "68708dcc6b89035b5ce19618",
+          "userId": "68708dcc6b89035b5ce19616",
+          "name": {
+            "firstName": "Daniel",
+            "lastName": "Robinson",
+            "_id": "68708dcc6b89035b5ce19619"
+          },
+          "phoneNo": "3478925412",
+          "workLocation": {
+            "city": "Seattle",
+            "state": "WA",
+            "country": "USA",
+            "_id": "68708dcc6b89035b5ce1961a"
+          },
+          "jobTitle": "Technical Program Manager",
+          "managerId": null,
+          "createdAt": "2025-07-11T04:06:36.776Z",
+          "updatedAt": "2025-07-11T04:06:36.776Z",
+          "__v": 0
+        }
+      },
+      {
+        "_id": "68709016119556a991a34016",
+        "email": "lena.martinez@abc.com",
+        "role": "manager",
+        "userDetails": {
+          "_id": "68709017119556a991a34018",
+          "userId": "68709016119556a991a34016",
+          "name": {
+            "firstName": "Lena",
+            "lastName": "Martinez",
+            "_id": "68709017119556a991a34019"
+          },
+          "phoneNo": "5103849275",
+          "workLocation": {
+            "city": "Austin",
+            "state": "TX",
+            "country": "USA",
+            "_id": "68709017119556a991a3401a"
+          },
+          "jobTitle": "Engineering Team Lead",
+          "managerId": "68708dcc6b89035b5ce19618",
+          "createdAt": "2025-07-11T04:16:23.325Z",
+          "updatedAt": "2025-07-11T04:16:23.325Z",
+          "__v": 0
+        }
       }
-    },
-    {
-      "_id": "68709016119556a991a34016",
-      "email": "lena.martinez@abc.com",
-      "role": "manager",
-      "userDetails": {
-        "_id": "68709017119556a991a34018",
-        "userId": "68709016119556a991a34016",
-        "name": {
-          "firstName": "Lena",
-          "lastName": "Martinez",
-          "_id": "68709017119556a991a34019"
-        },
-        "phoneNo": "5103849275",
-        "workLocation": {
-          "city": "Austin",
-          "state": "TX",
-          "country": "USA",
-          "_id": "68709017119556a991a3401a"
-        },
-        "jobTitle": "Engineering Team Lead",
-        "managerId": "68708dcc6b89035b5ce19618",
-        "createdAt": "2025-07-11T04:16:23.325Z",
-        "updatedAt": "2025-07-11T04:16:23.325Z",
-        "__v": 0
-      }
-    }
-  ]
-}
-```
+    ]
+  }
+  ```
 
 ---
 
@@ -699,6 +699,81 @@ Base Path: `/api/user-details`
   ]
 }
 ```
+
+---
+
+### Get My Team (Manager Only)
+
+- **Endpoint**: GET /api/user-details/manager/my-team
+  - **Description**: Retrieves a list of all employees that report directly to the logged-in manager.
+  - **Authorization**: manager.
+  - **Request**: None.
+  - **Response**:
+    - **Status**: 200 OK
+    - **Body**: An array of employee objects representing the manager's direct reports. The salary field is included for all reports.
+
+    ```json
+    {
+      "success": true,
+      "message": "Team data retrieved successfully",
+      "data": [
+        {
+          "_id": "6873040e68019552aac77cab",
+          "userId": {
+            "_id": "6873040e68019552aac77ca9",
+            "email": "victoria.perry@abc.com",
+            "role": "employee"
+          },
+          "name": {
+            "firstName": "Victoria",
+            "lastName": "Perry",
+            "_id": "6873040e68019552aac77cae"
+          },
+          "phoneNo": "9314726058",
+          "workLocation": {
+            "city": "Seattle",
+            "state": "WA",
+            "country": "USA",
+            "_id": "6873040e68019552aac77caf"
+          },
+          "salary": 72800,
+          "jobTitle": "Software Engineer",
+          "managerId": "68708dcc6b89035b5ce19618",
+          "createdAt": "2025-07-12T06:49:18.295Z",
+          "updatedAt": "2025-07-12T06:49:18.295Z",
+          "__v": 0
+        },
+        {
+          "_id": "6873021f68019552aac77be9",
+          "userId": {
+            "_id": "6873021f68019552aac77be7",
+            "email": "benjamin.ford@abc.com",
+            "role": "employee"
+          },
+          "name": {
+            "firstName": "Benjamin",
+            "lastName": "Ford",
+            "_id": "6873021f68019552aac77bec"
+          },
+          "phoneNo": "7183926450",
+          "workLocation": {
+            "city": "Seattle",
+            "state": "WA",
+            "country": "USA",
+            "_id": "6873021f68019552aac77bed"
+          },
+          "salary": 78000,
+          "jobTitle": "QA Tester",
+          "managerId": "68708dcc6b89035b5ce19618",
+          "createdAt": "2025-07-12T06:41:03.334Z",
+          "updatedAt": "2025-07-12T06:41:03.334Z",
+          "__v": 0
+        }
+      ]
+    }
+    ```
+
+---
 
 ## Module: Prediction
 

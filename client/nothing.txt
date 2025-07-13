@@ -1,1 +1,0 @@
-made this so that react and client folders aren't clumped together in vscode
