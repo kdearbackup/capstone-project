@@ -1,7 +1,41 @@
-import mockData from "../mockData.json"
+import React, { useState, useEffect } from 'react';
 
 const Home = ({ username }) => {
-    return (
+  const [userData, setUserData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/api/user-details/employees', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${getCookie('accessToken')}`, // Use cookie to get the token
+          },
+          credentials: 'include', // Ensure cookies are included in the request
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        setUserData(data.data); // Assuming the data is in the 'data' attribute
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Function to get a cookie value by name
+  const getCookie = (name) => {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  };
+
+  return (
     <div>
       <div className="home-container">
         <h2 className="home-title">Home Page</h2>
@@ -26,7 +60,7 @@ const Home = ({ username }) => {
             </tr>
           </thead>
           <tbody>
-            {mockData.map((user, index) => (
+            {userData.map((user, index) => (
               <tr key={index}>
                 <td>{user.name.firstName} {user.name.lastName}</td>
                 <td>{user.userId.email}</td>
@@ -38,9 +72,8 @@ const Home = ({ username }) => {
           </tbody>
         </table>
       </div>
-        </div>
-    );
-  };
-  
-  export default Home;
-  
+    </div>
+  );
+};
+
+export default Home;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const QueryForm = ({ onQuery }) => {
   const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNo, setPhoneNumber] = useState('');
   const [jobRole, setJobRole] = useState('');
   const [location, setLocation] = useState('');
   const [email, setEmail] = useState('');
@@ -10,7 +10,7 @@ const QueryForm = ({ onQuery }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Pass the query parameters to the parent component or function
-    onQuery({ name, phoneNumber, email, jobRole, location });
+    onQuery({ name, phoneNo, email, jobRole, location });
   };
 
   return (
@@ -27,7 +27,7 @@ const QueryForm = ({ onQuery }) => {
         <label>Phone Number :</label>
         <input
           type="text"
-          value={phoneNumber}
+          value={phoneNo}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
       </div>

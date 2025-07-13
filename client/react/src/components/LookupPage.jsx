@@ -1,29 +1,49 @@
 import React, { useState } from 'react';
-import QueryForm from "./QueryForm"
-import mockData from '../mockData.json';
+import QueryForm from "./QueryForm";
 
 const LookupPage = () => {
+  const [results, setResults] = useState([]);
 
-      const [results, setResults] = useState([]);
-
-      const handleQuery = (queryParams) => {
-      // Simulate querying the mock data
-      const filteredResults = mockData.filter(user => {
-        console.log(user)
-        let nameStringLower = `${user.name.firstName} ${user.name.lastName}`.toLowerCase()
-        return user.workLocation.city.toLowerCase() === queryParams.location.toLowerCase() || user.userId.email === queryParams.email || queryParams.name.toLowerCase() === nameStringLower || user.jobTitle === queryParams.jobTitle ;
+  const searchEmployees = async (searchCriteria) => {
+    console.log(searchCriteria);
+    try {
+      const response = await fetch('http://localhost:4000/api/user-details/employees/search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json', // IMPORTANT: Add this header
+        },
+        credentials: 'include',
+        body: JSON.stringify(searchCriteria), // Stringify only once here
       });
-  
-      setResults(filteredResults);
-    };
 
-      return (
-        <div className="lookup-container">
-          <h2 className="lookup-title">Lookup Page</h2>
-          <p className="lookup-description">Look up people's stuff (coming soon)</p>
-    
-          <QueryForm onQuery={handleQuery} />
-          {results.length > 0 && (
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log("Received data:", data);
+      setResults(data.data || []);
+    } catch (error) {
+      console.error('Error searching employees:', error);
+    }
+  };
+
+  const handleQuery = (queryParams) => {
+    const filteredQueryParams = Object.fromEntries(
+      Object.entries(queryParams).filter(([key, value]) => value !== '')
+    );
+
+    // Pass the object directly, do NOT stringify here
+    searchEmployees(filteredQueryParams);
+  };
+
+  return (
+    <div className="lookup-container">
+      <h2 className="lookup-title">Lookup Page</h2>
+      <p className="lookup-description">Look up people's stuff (coming soon)</p>
+
+      <QueryForm onQuery={handleQuery} />
+      {results.length > 0 && (
         <table border="1">
           <thead>
             <tr>
@@ -37,18 +57,18 @@ const LookupPage = () => {
           <tbody>
             {results.map((user, index) => (
               <tr key={index}>
-                <td>{user.name.firstName} {user.name.lastName}</td>
-                <td>{user.userId.email}</td>
-                <td>{user.phoneNo}</td>
-                <td>{user.salary}</td>
-                <td>{user.jobTitle}</td>
+                <td>{user.userDetails.name?.firstName} {user.userDetails.name?.lastName}</td>
+                <td>{user.userDetails.userId?.email}</td>
+                <td>{user.userDetails?.phoneNo}</td>
+                <td>{user.userDetails?.salary}</td>
+                <td>{user.userDetails?.jobTitle}</td>
               </tr>
             ))}
           </tbody>
         </table>
       )}
-        </div>
-      );
+    </div>
+  );
 }
 
-export default LookupPage
+export default LookupPage;
