@@ -79,7 +79,7 @@ const ChangePassword = () => {
 		<div className="hero min-h-screen bg-base-200">
 			<div className="card shrink-0 w-full max-w-[600px] shadow-2xl bg-base-100 py-10">
 				<form className="card-body mx-auto w-11/12" onSubmit={handleSubmit}>
-					<h1 className="text-4xl font-bold text-center mb-5">
+					<h1 className="text-4xl font-bold text-center mb-8">
 						{wasForced ? "Change" : "Reset"} Your Password
 					</h1>
 					{wasForced && (
@@ -89,8 +89,8 @@ const ChangePassword = () => {
 						</p>
 					)}
 
-					<div className="form-control">
-						<p className="label-text">Old Password</p>
+					<div className="form-control mb-2">
+						<p className="label-text ml-2">Old Password</p>
 						<input
 							type="password"
 							placeholder="Current Password"
@@ -101,8 +101,8 @@ const ChangePassword = () => {
 						/>
 					</div>
 
-					<div className="form-control">
-						<p className="label-text">New Password</p>
+					<div className="form-control mb-2">
+						<p className="label-text ml-2">New Password</p>
 						<input
 							type="password"
 							placeholder="New Strong Password"
@@ -113,7 +113,7 @@ const ChangePassword = () => {
 						/>
 					</div>
 					<div className="form-control">
-						<p className="label-text">Confirm New Password</p>
+						<p className="label-text ml-2">Confirm New Password</p>
 						<input
 							type="password"
 							placeholder="Confirm New Password"
@@ -125,7 +125,10 @@ const ChangePassword = () => {
 					</div>
 
 					<div className="form-control mt-6">
-						<button type="submit" className="btn btn-primary">
+						<button
+							type="submit"
+							className="btn btn-primary text-black font-semibold"
+						>
 							Update Password
 						</button>
 					</div>

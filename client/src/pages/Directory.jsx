@@ -108,7 +108,7 @@ const Directory = () => {
 				<div className="form-control self-end">
 					<button
 						type="submit"
-						className="btn w-[115px] px-7 btn-primary mr-2 text-black"
+						className="btn w-[115px] px-7 btn-primary mr-2 text-black font-semibold"
 					>
 						Search
 					</button>

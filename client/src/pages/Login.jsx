@@ -54,9 +54,9 @@ const Login = () => {
 			<div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100 py-10">
 				<h1 className="text-center text-4xl font-bold">Enterprise Directory</h1>
 				<form className="card-body mx-auto w-11/12" onSubmit={handleSubmit}>
-					<h1 className="text-4xl font-bold text-center mb-5">Login</h1>
-					<div className="form-control">
-						<p className="label-text">Email</p>
+					<h1 className="text-4xl font-bold text-center mb-7">Login</h1>
+					<div className="form-control mb-2">
+						<p className="label-text ml-2">Email</p>
 						<input
 							type="email"
 							placeholder="Email"
@@ -68,7 +68,7 @@ const Login = () => {
 						/>
 					</div>
 					<div className="form-control">
-						<p className="label-text">Password</p>
+						<p className="label-text ml-2">Password</p>
 						<input
 							type="password"
 							placeholder="Password"
@@ -79,7 +79,10 @@ const Login = () => {
 						/>
 					</div>
 					<div className="form-control mt-6">
-						<button type="submit" className="btn btn-primary">
+						<button
+							type="submit"
+							className="btn btn-primary text-black font-semibold"
+						>
 							Login
 						</button>
 					</div>
