@@ -56,19 +56,19 @@ To get the client running, follow these steps from the project's root directory:
 **Navigate to the client directory**:
 
 ```bash
-	cd client
+cd client
 ```
 
 **Install all required npm packages**:
 
 ```bash
-	npm install
+npm install
 ```
 
 **Run the development server**:
 
 ```bash
-	npm run dev
+npm run dev
 ```
 
 The application will be available at `http://localhost:5173`.
