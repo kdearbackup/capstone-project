@@ -22,7 +22,7 @@ A React web application to allow employees to search an enterprise-wide employee
 Salary is confidential information so:
 
 - Any employee can view their own salary.
-- An employee's manager can view the salary of any of their direct reports.
+- A manager can view the salary of any of their direct reports.
 - An employee in the HR role can view anyone's salary.
 
 ### Data Analysis & Salary Prediction
