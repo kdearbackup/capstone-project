@@ -130,7 +130,7 @@ Base Path: `/api/auth`
       "success": true,
       "message": "User is logged in successfully",
       "data": {
-        "needsPasswordChange": true // true - after the user changes their password, this field will be updated false
+        "needsPasswordChange": true // true - after the user changes their password, this field will be updated to false
       }
     }
     ```
