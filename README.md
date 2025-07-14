@@ -141,19 +141,19 @@ FRONT_END_BASE_URI=http://localhost:5173
 
 Navigate to the server directory and install its dependencies.
 
-a.  **Navigate to the server directory:**
+-  **Navigate to the server directory:**
 
     ```bash
     cd server
     ```
 
-b.  **Install all required npm packages:**
+-  **Install all required npm packages:**
 
     ```bash
     npm install
     ```
 
-c.  **Run the development server:**
+-  **Run the development server:**
 
     ```bash
     npm run start:dev
@@ -163,7 +163,7 @@ The API server will be available at `http://localhost:4000`.
 
 #### 3. Python Machine Learning Environment Setup
 
-a.  **Navigate to the python directory from the project root:**
+-  **Navigate to the python directory from the project root:**
 
     ```bash
     cd python
@@ -171,11 +171,11 @@ a.  **Navigate to the python directory from the project root:**
     cd path/to
     ```
 
-b.  **Create a virtual environment:**
+-  **Create a virtual environment:**
     ```bash
     python -m venv venv
     ```
-c.  **Activate the virtual environment:**
+-  **Activate the virtual environment:**
     - On Windows (Git Bash):
       ```bash
       source venv/Scripts/activate
@@ -184,11 +184,11 @@ c.  **Activate the virtual environment:**
       ```bash
       source venv/bin/activate
       ```
-d.  **Install required Python packages:**
+-  **Install required Python packages:**
     ```bash
     pip install pandas scikit-learn
     ```
-e.  **Windows Specific Path Update:**
+-  **Windows Specific Path Update:**
     If you are running the application on Windows, you must update the Python script path in the controller.
     - **File:** `server/src/app/modules/predictSalary/predictSalary.controller.ts`
     - **Change:** On line 18, replace `bin` with `Scripts`.
