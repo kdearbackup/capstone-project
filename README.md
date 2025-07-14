@@ -141,57 +141,69 @@ FRONT_END_BASE_URI=http://localhost:5173
 
 Navigate to the server directory and install its dependencies.
 
--  **Navigate to the server directory:**
+- **Navigate to the server directory:**
 
-    ```bash
-    cd server
-    ```
+```bash
+cd server
+```
 
--  **Install all required npm packages:**
+- **Install all required npm packages:**
 
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
--  **Run the development server:**
+- **Run the development server:**
 
-    ```bash
-    npm run start:dev
-    ```
+```bash
+npm run start:dev
+```
 
 The API server will be available at `http://localhost:4000`.
 
 #### 3. Python Machine Learning Environment Setup
 
--  **Navigate to the python directory from the project root:**
+- **Navigate to the python directory from the project root:**
 
-    ```bash
-    cd python
-    mkdir -p path/to
-    cd path/to
-    ```
+```bash
+cd python
+mkdir -p path/to
+cd path/to
+```
 
--  **Create a virtual environment:**
+- **Create a virtual environment:**
+
+```bash
+python -m venv venv
+```
+
+- **Activate the virtual environment:**
+  - On Windows (Git Bash):
     ```bash
-    python -m venv venv
+    source venv/Scripts/activate
     ```
--  **Activate the virtual environment:**
-    - On Windows (Git Bash):
-      ```bash
-      source venv/Scripts/activate
-      ```
-    - On macOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
--  **Install required Python packages:**
+  - On macOS/Linux:
     ```bash
-    pip install pandas scikit-learn
+    source venv/bin/activate
     ```
--  **Windows Specific Path Update:**
-    If you are running the application on Windows, you must update the Python script path in the controller.
-    - **File:** `server/src/app/modules/predictSalary/predictSalary.controller.ts`
-    - **Change:** On line 18, replace `bin` with `Scripts`.
+- **Install required Python packages:**
+
+- On macOS/Linux:
+
+  ```bash
+  source venv/bin/activate
+  ```
+
+- **Install required Python packages:**
+
+  ```bash
+  pip install pandas scikit-learn
+  ```
+
+- **Windows Specific Path Update:**
+  If you are running the application on Windows, you must update the Python script path in the controller.
+  - **File:** `server/src/app/modules/predictSalary/predictSalary.controller.ts`
+  - **Change:** On line 18, replace `bin` with `Scripts`.
 
 ---
 
