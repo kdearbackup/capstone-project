@@ -64,7 +64,10 @@ const PredictSalary = () => {
 					onChange={(e) => setLocation(e.target.value)}
 					required
 				/>
-				<button type="submit" className="btn btn-primary w-full">
+				<button
+					type="submit"
+					className="btn btn-primary w-full text-black font-bold"
+				>
 					Predict
 				</button>
 			</form>

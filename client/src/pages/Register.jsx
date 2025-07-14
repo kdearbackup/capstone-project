@@ -254,7 +254,10 @@ const Register = () => {
 					</select>
 				</div>
 
-				<button type="submit" className="btn btn-primary w-full mt-6">
+				<button
+					type="submit"
+					className="btn btn-primary w-full mt-6 text-black font-bold"
+				>
 					Register Employee
 				</button>
 			</form>

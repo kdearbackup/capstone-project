@@ -46,7 +46,7 @@ const Directory = () => {
 
 		// Construct the payload in the format { field: value }
 		const payload = {
-			[searchCategory]: searchValue,
+			[searchCategory]: searchValue.toLowerCase(),
 		};
 
 		try {
