@@ -178,6 +178,7 @@ python -m venv venv
 ```
 
 - **Activate the virtual environment:**
+
   - On Windows (Git Bash):
     ```bash
     source venv/Scripts/activate
@@ -186,13 +187,6 @@ python -m venv venv
     ```bash
     source venv/bin/activate
     ```
-- **Install required Python packages:**
-
-- On macOS/Linux:
-
-  ```bash
-  source venv/bin/activate
-  ```
 
 - **Install required Python packages:**
 
