@@ -137,29 +137,57 @@ JWT_REFRESH_TOKEN_EXPIRES_IN=7d
 FRONT_END_BASE_URI=http://localhost:5173
 ```
 
-#### 2. Package Installation
+#### 2. ode.js Package Installation
 
 Navigate to the server directory and install its dependencies.
 
-1.**Navigate to the server directory:**
+1.  **Navigate to the server directory:**
 
-```bash
-cd server
-```
+    ```bash
+    cd server
+    ```
 
-2.**Install all required npm packages:**
+2.  **Install all required npm packages:**
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-3.**Run the development server:**
+3.  **Run the development server:**
 
-```bash
-npm run start:dev
-```
+    ```bash
+    npm run start:dev
+    ```
 
 The API server will be available at `http://localhost:4000`.
+
+#### 3. Python Machine Learning Environment Setup
+
+1.  **Navigate to the python directory from the project root:**
+
+    ```bash
+    cd python
+    mkdir -p path/to
+    cd path/to
+    ```
+
+2.  **Create a virtual environment:**
+    ```bash
+    python -m venv venv
+    ```
+3.  **Activate the virtual environment:**
+    - On Windows (Git Bash):
+      ```bash
+      source venv/Scripts/activate
+      ```
+    - On macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+4.  **Install required Python packages:**
+    ```bash
+    pip install pandas scikit-learn
+    ```
 
 ---
 

@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import logo from "../../public/travImage.png";
 import { AuthContext } from "../context/AuthContext";
 import ThemeToggle from "./ThemeToggle";
 
@@ -24,7 +23,7 @@ const Navbar = () => {
 			<div className="navbar-start">
 				<Link to="/directory" className="btn btn-ghost normal-case text-2xl">
 					<div className="max-w-10 mr-5">
-						<img src={logo} alt="travelers logo" />
+						<img src="travImage.png" alt="travelers logo" />
 					</div>
 					Enterprise Directory
 				</Link>
