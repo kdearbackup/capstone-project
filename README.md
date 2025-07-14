@@ -188,6 +188,10 @@ The API server will be available at `http://localhost:4000`.
     ```bash
     pip install pandas scikit-learn
     ```
+5.  **Windows Specific Path Update:**
+    If you are running the application on Windows, you must update the Python script path in the controller.
+    - **File:** `server/src/app/modules/predictSalary/predictSalary.controller.ts`
+    - **Change:** On line 18, replace `bin` with `Scripts`.
 
 ---
 
