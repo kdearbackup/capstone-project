@@ -137,23 +137,23 @@ JWT_REFRESH_TOKEN_EXPIRES_IN=7d
 FRONT_END_BASE_URI=http://localhost:5173
 ```
 
-#### 2. ode.js Package Installation
+#### 2. Node.js Package Installation
 
 Navigate to the server directory and install its dependencies.
 
-1.  **Navigate to the server directory:**
+a.  **Navigate to the server directory:**
 
     ```bash
     cd server
     ```
 
-2.  **Install all required npm packages:**
+b.  **Install all required npm packages:**
 
     ```bash
     npm install
     ```
 
-3.  **Run the development server:**
+c.  **Run the development server:**
 
     ```bash
     npm run start:dev
@@ -163,7 +163,7 @@ The API server will be available at `http://localhost:4000`.
 
 #### 3. Python Machine Learning Environment Setup
 
-1.  **Navigate to the python directory from the project root:**
+a.  **Navigate to the python directory from the project root:**
 
     ```bash
     cd python
@@ -171,11 +171,11 @@ The API server will be available at `http://localhost:4000`.
     cd path/to
     ```
 
-2.  **Create a virtual environment:**
+b.  **Create a virtual environment:**
     ```bash
     python -m venv venv
     ```
-3.  **Activate the virtual environment:**
+c.  **Activate the virtual environment:**
     - On Windows (Git Bash):
       ```bash
       source venv/Scripts/activate
@@ -184,11 +184,11 @@ The API server will be available at `http://localhost:4000`.
       ```bash
       source venv/bin/activate
       ```
-4.  **Install required Python packages:**
+d.  **Install required Python packages:**
     ```bash
     pip install pandas scikit-learn
     ```
-5.  **Windows Specific Path Update:**
+e.  **Windows Specific Path Update:**
     If you are running the application on Windows, you must update the Python script path in the controller.
     - **File:** `server/src/app/modules/predictSalary/predictSalary.controller.ts`
     - **Change:** On line 18, replace `bin` with `Scripts`.
